@@ -1,0 +1,26 @@
+@bot=tonychoucc_bot
+@name=tonycc
+@me=1065399501
+@chat_id={{tgbot_tonycc_chatid}}
+@token={{tgbot_tonycc_token}}
+@URL=https://api.telegram.org
+@API={{URL}}/bot{{token}}
+
+
+### 機器人介紹 ===============================================
+GET {{API}}/getMe
+
+
+### 查看命令紀錄, 「/」開頭 ===================================
+GET {{API}}/getUpdates
+
+
+### 發送訊息 ================================================
+POST {{API}}/sendMessage
+Content-Type: application/json
+
+{
+    "chat_id": "{{me}}",
+    "text": "機器人API發送..."
+}
+###  ================================================
